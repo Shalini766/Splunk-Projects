@@ -9,6 +9,6 @@ SMTP is the Simple Mail Transfer Protocol, which is necessary for the transfer o
 
   *Sample SMTP log>settings>add data>Upload as the data input>select file>select source type (SMTP)>submit*
 
-  ### Step 2: Analysis
-  - Go to Splunk search bar and enter the following command to see the SMTP events.
+ ### Step 2: Analysis
+ - Go to Splunk search bar and enter the following command to see the SMTP events.
   
