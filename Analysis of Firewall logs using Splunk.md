@@ -31,6 +31,11 @@ Sample firewall log>settings>add data>Upload as the data input>select file>selec
 ### Step 5:
 - Identify the action taken and the app risk
 
- *index=<your_firewall_index> sourcetype=<your_firewall_sourcetype> action=allowed AND app_risk=5* 
+ *index=<your_firewall_index> sourcetype=<your_firewall_sourcetype> action=allowed AND app_risk=5*
 
-Analysing these firewall logs will help in detecting the unwanted traffic entering and also help prevent blocking the malicious websites in acccessing information by writing certain firewall rules, thus strengthening the security posture. 
+### Step 6:
+- Identify the user behaviour, such as the user visiting social media sites.
+
+  *index=<your_firewall_index> sourcetype=<your_firewall_sourcetype> app:subcategory=social-networking| top user app app:risk*
+
+Analysing these firewall logs will help in detecting the unwanted traffic entering and also help prevent blocking the malicious websites from accessing information by writing certain firewall rules, thus strengthening the security posture. 
