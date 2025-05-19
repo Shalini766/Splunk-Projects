@@ -31,9 +31,12 @@ SMTP is the Simple Mail Transfer Protocol, which is necessary for the transfer o
 
 *index="***" sourcetype="*smtp*"| stats count by action,host,sender,recipient*
 
+![spl visual](https://github.com/user-attachments/assets/a61e74ef-6245-47b4-943e-52ac8c257122)
+
+
 ### Step 5: Detecting Anomalies
 
-- Identify the email pattern and count in the span of 1hr using the following command
+- Identify the email pattern and count in the span of 1 hour using the following command
 
 *index=<your_smtp_index> sourcetype="*smtp*"|timechart span=1h count by _time*
 
