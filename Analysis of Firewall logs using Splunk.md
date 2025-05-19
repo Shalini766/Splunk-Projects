@@ -4,5 +4,5 @@ A firewall is important in monitoring incoming and outgoing traffic. These firew
 ## Steps:
 
 ### Step 1: 
-Splunk instance is installed and configured.
-DNS log data sources are configured to forward logs to Splunk
+The Splunk instance is installed and configured.
+Firewall log data sources are configured to forward logs to Splunk.
