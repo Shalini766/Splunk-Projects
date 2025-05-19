@@ -4,4 +4,4 @@ Splunk is a SIEM tool used to collect data from various log sources to monitor a
 ### Projects:
 1. [SMTP logs Analysis using Splunk](https://github.com/Shalini766/Splunk-Projects/blob/main/Analysis%20of%20Firewall%20logs%20using%20Splunk.md)
 
-2. Analysis of Firewall logs using Splunk
+2. [Analysis of Firewall logs using Splunk](https://github.com/Shalini766/Splunk-Projects/blob/main/Analysis%20of%20Firewall%20logs%20using%20Splunk.md)
