@@ -15,6 +15,36 @@ Here we are using already configured and indexed logs for our analysis.
 ### Step 3: Analyzing Security Events from AD
 - Go to Splunk Search and enter the below query to analyse the failed login attempts and account lockouts.
 
+  *index=<index_name> sourcetype=<sourcetype_name> EventCode=4624* (successful login)
+
   *index=<index_name> sourcetype=<sourcetype_name> EventCode=4625* (failed login)
   
   *index=<index_name> sourcetype=<sourcetype_name> EventCode=4740* (account lockout)
+### Step 4: Creating Dashboard for Events
+- Click on "Create new Dashboard".
+- Add New Panel, select "Search" as data source.
+- Use search query to filter logon events such as
+
+   *sourcetype=<sourcetype_name> EventCode=4624* (successful login)
+
+  -Configure visualization and save panel.
+
+Now AD Logons Dashboard is created.
+### Step 5: Setting up Alerts for Failed AD Logon
+- Use the search query
+
+  *index=<index_name> sourcetype=<sourcetype_name> EventCode=4625* (failed login)
+
+- Click on "Save as Alert" and configure the settings.
+  *Save as-> Alert->Title->Alert Type->Trigger Conditions->Trigger actions->Add to Triggered Alerts->Severityis High->Save*
+### Step 6: Generating Report
+- Save the search that you want to generate report such as
+  
+   *sourcetype=<sourcetype_name> EventCode=4624*
+
+- Save as "Report" and configure the report settings.
+- Now Reports will be generated for the saved search query regularly.
+
+By using Splunk way we can analyse the AD Activity on Windows which helps in monitoring, detecting and visualizing the suspicious AD  activity and logs, and gain valuable insights into AD security and operational events.
+
+
